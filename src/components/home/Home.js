@@ -1,10 +1,9 @@
-import Header from '/mnt/c/Users/MFC/travel-destination/src/components/header/Header.js';
-import Tours from '/mnt/c/Users/MFC/travel-destination/src/components/tours/Tours.js';
-import Footer from '/mnt/c/Users/MFC/travel-destination/src/components/footer/Footer.js';
-const citiesData = require('/mnt/c/Users/MFC/travel-destination/src/data/db.json');
+import Header from '../header/Header.js';
+import Tours from '../tours/Tours.js';
+import Footer from '../footer/Footer.js';
  
 
-function Home(){
+function Home(props){
 
     return(
         
@@ -12,7 +11,7 @@ function Home(){
 
         <Header/>
 
-        <Tours data = {citiesData}/>
+        <Tours data = {props.citiesData}/>
 
         <Footer/>
 
