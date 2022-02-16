@@ -1,0 +1,18 @@
+.header_nav a{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(54, 54, 54);
+    margin-right: 40px;
+}
+
+.header_nav a:hover{
+    color: rgb(31, 135, 255);
+    text-transform: uppercase;
+}
+
+#nameApp{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

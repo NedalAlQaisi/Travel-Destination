@@ -1,24 +1,29 @@
-import Header from '../header/Header.js';
-import Tours from '../tours/Tours.js';
-import Footer from '../footer/Footer.js';
- 
+import Header from '../header/Header';
+import Tours from '../tours/Tours';
+import Footer from '../footer/Footer';
 
-function Home(props){
 
-    return(
-        
-        <>  
+function Home(props) {
 
-        <Header/>
+    return (
 
-        <Tours data = {props.citiesData}/>
+        <>
 
-        <Footer/>
+            <Header />
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <Tours data2={props.data} />
+
+            <Footer />
 
         </>
-        
-        
-    )
+
+
+    );
 }
 
 export default Home;

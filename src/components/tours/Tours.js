@@ -1,25 +1,27 @@
 import './Tours.css';
+import Tour from './tour/Tour';
+import { Link } from 'react-router-dom';
 
-function Tours(props){
-    
-    return(
-        <div  className = "over">
-        {
-            props.data.map(city =>{
 
-                return(
-                    <div key ={city.id} style={{padding: 20}}>
-                    <h2>{city.name}</h2>
-                    <img className = "imgSize" src={city.image} alt={city.name}/>
-                    <h4>{city.info}</h4>
-                    <h4 className="price">Price:{city.price}</h4>
-                    <br></br>
-                    <hr></hr>
-                    </div>
-                )
-            })
-        }
-        </div>
+function Tours(props) {
+
+    return (
+        <>
+            {
+                props.data2.map(value => {
+
+                    return (
+
+                        <Link to={`/city/${value.id}`}>
+
+                            <Tour key={value.id} city={value} />
+
+                        </Link>
+
+                    );
+                })
+            }
+        </>
     )
 }
 
