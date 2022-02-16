@@ -1,13 +1,15 @@
+import './Navbar.css'
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Navbar() {
     return (
         <>
-            <nav>
+            <nav className="header_nav">
+                <h1 id="nameApp">Travel Destination</h1>
                 <Link to="/">Home</Link>
             </nav>
         </>
     )
 }
 
-export default Nav;
+export default Navbar;

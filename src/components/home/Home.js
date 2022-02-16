@@ -11,14 +11,19 @@ function Home(props) {
 
             <Header />
 
-            <Tours data={props.citiesData} />
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <Tours data2={props.data} />
 
             <Footer />
 
         </>
 
 
-    )
+    );
 }
 
 export default Home;
